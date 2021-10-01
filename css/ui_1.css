@@ -26,42 +26,30 @@ html,body{overflow:hidden;height:100%;}
   box-sizing: border-box;
 }
 
-body {
-  text-align: center;
-  background-image: url(../images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#top {
+#nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 100px;
+  background-color: #323232;
 }
 
-#title {
-  position: absolute;
-  top: 56%;
-  left: 45%;
-  background: #DBDBDB;
-  font-size: 56px;
-  border:2px solid;
-  border-radius: 7px;
-  padding: 5px 30px;
+#menu {
+  list-style: none;
+  text-align: center;
 }
 
-#title :hover {
-  font-size: 0;
+#menu li {
+  display: inline-block;
+  width: 100px;
 }
 
-#title :hover:before {
-  content: "오늘 뭐 먹지?";
-  font-size: 56px;
-  font-weight: 700;
-  background-color:
+#menu li:not(:last-child) {
+  margin-right: 50px;
 }
 
-#title a {
-  color: #FF5523;
+#menu li a{
+  line-height: 100px;
+  text-decoration: none;
+
 }
