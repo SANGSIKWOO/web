@@ -44,9 +44,8 @@ body {
   position: absolute;
   top: 56%;
   left: 45%;
-  background: #DBDBDB;
+  background-color: rgba(219,219,219,0.3);
   font-size: 56px;
-  border:2px solid;
   border-radius: 7px;
   padding: 5px 30px;
 }
@@ -55,11 +54,11 @@ body {
   font-size: 0;
 }
 
-#title :hover:before {
+#title :hover:before{
   content: "오늘 뭐 먹지?";
   font-size: 56px;
   font-weight: 700;
-  background-color:
+  background-color: rgba(219,219,219,1);
 }
 
 #title a {
