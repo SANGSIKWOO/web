@@ -22,34 +22,113 @@ a:hover {text-decoration:none}
 .blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
 html,body{overflow:hidden;height:100%;}
 
-* {
-  box-sizing: border-box;
-}
-
 #nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #323232;
 }
 
 #menu {
   list-style: none;
   text-align: center;
+  margin: 0;
 }
 
 #menu li {
   display: inline-block;
-  width: 100px;
+  width: 18%;
 }
 
 #menu li:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 1%;
 }
 
 #menu li a{
-  line-height: 100px;
+  line-height: 80px;
   text-decoration: none;
+}
 
+#strong {
+  background-color: #454444;
+  font-size: 1.3em;
+}
+
+#content {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#title {
+  margin-top: 90px;
+  text-align: center;
+}
+
+#title strong {
+  font-size: 30px;
+  color: black;
+}
+
+#title em {
+  font-style: italic;
+  color: black;
+}
+
+.choice {
+  text-align: center;
+  width: 45%;
+  margin-left: 0;
+  margin-right: 0;
+  display: inline-block;
+  height: 40%;
+}
+
+#lunch {
+  background-image: url(../images/lunch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+#dinner {
+  background-image: url(../images/dinner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+#content a:hover {
+  opacity: 0.65;
+  position: relative;
+}
+
+#content a #lunch:hover:before {
+  width: 100%;
+  height: 100%;
+  content:"점심";
+  color: rgba(0,0,255,0.9);
+  position: absolute;
+  font-size: 100px;  
+  top: 25%;
+  left: 0;
+}
+
+#content a #dinner:hover:before {
+  width: 100%;
+  height: 100%;
+  content: "저녁";
+  color: rgba(255,0,0,0.9);
+  position: absolute;
+  font-size: 100px;
+  top: 25%;
+  left: 0;
+}
+
+#video {
+  display: inline-block;
 }

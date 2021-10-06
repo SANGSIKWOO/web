@@ -22,10 +22,6 @@ a:hover {text-decoration:none}
 .blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
 html,body{overflow:hidden;height:100%;}
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   text-align: center;
   background-image: url(../images/background.jpg);
@@ -44,7 +40,6 @@ body {
   position: absolute;
   top: 56%;
   left: 45%;
-  background-color: rgba(219,219,219,0.3);
   font-size: 56px;
   border-radius: 7px;
   padding: 5px 30px;
@@ -58,7 +53,6 @@ body {
   content: "오늘 뭐 먹지?";
   font-size: 56px;
   font-weight: 700;
-  background-color: rgba(219,219,219,1);
 }
 
 #title a {
